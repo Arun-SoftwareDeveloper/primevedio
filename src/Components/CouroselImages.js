@@ -21,7 +21,7 @@ function CouroselImages() {
                 <div className="carousel-item active">
                   <img
                     src={Image1}
-                    alt="Image 1"
+                    alt="Vikram"
                     className="d-block w-100"
                     style={{ width: "800px", height: "450px" }}
                   />
@@ -29,7 +29,7 @@ function CouroselImages() {
                 <div className="carousel-item">
                   <img
                     src={Image2}
-                    alt="Image 2"
+                    alt="Darbar"
                     className="d-block w-100"
                     style={{ width: "800px", height: "450px" }}
                   />
@@ -37,12 +37,13 @@ function CouroselImages() {
                 <div className="carousel-item">
                   <img
                     src={Image3}
-                    alt="Image 3"
+                    alt="Panchadhandhiram"
                     className="d-block w-100"
                     style={{ width: "800px", height: "450px" }}
                   />
                 </div>
               </div>
+
               <a
                 className="carousel-control-prev"
                 href="#myCarousel"
