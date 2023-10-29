@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
-import "../Components/HeaderContainer";
+import { toast } from "react-toastify";
 import HeaderContainer from "../Components/HeaderContainer";
+import "../Styles/RegisterForm.css";
+import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 function RegisterForm() {
   const [formData, setFormData] = useState({
@@ -21,15 +23,17 @@ function RegisterForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/register",
+        "https://primevedio-backend.onrender.com/register",
         formData
       );
       if (response.status === 200) {
-        toast.success("Registered Successfully");
+        // Show a success toast
+        toast.success("Registration successful!");
       }
     } catch (error) {
+      // Show an error toast
+      toast.error("Internal Server error");
       console.error(error);
-      toast.error("Registration Failed");
     }
   };
 
@@ -78,11 +82,20 @@ function RegisterForm() {
               <button type="submit" className="btn btn-primary">
                 Register
               </button>
+              <br />
+              <p></p>
+              <p className="text-left black">
+                Already a User?
+                <Link to="/login">
+                  <span style={{ color: "dodgerblue", cursor: "pointer" }}>
+                    Login
+                  </span>
+                </Link>
+              </p>
             </form>
           </div>
         </div>
       </div>
-      <ToastContainer position="top-right" />
     </div>
   );
 }
