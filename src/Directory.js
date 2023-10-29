@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from "react";
 import HeaderContainer from "./Components/HeaderContainer";
 import CouroselImages from "./Components/CouroselImages";
 import ThalaivarMovies from "./Components/ThalaivarMovies";
