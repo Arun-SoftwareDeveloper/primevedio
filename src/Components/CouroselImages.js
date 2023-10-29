@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image1 from "../Images/vikram.webp";
 import Image2 from "../Images/darbar.jpg";
 import Image3 from "../Images/panchadhandhiram.jpg";
