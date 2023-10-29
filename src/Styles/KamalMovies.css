@@ -1,0 +1,38 @@
+/* ThalaivarMovies.css */
+.kamalMovies-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* Customize the carousel container */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Customize the carousel images */
+.kamal-image-container {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.kamal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.kamal-image:hover {
+  transform: scale(1.05);
+}

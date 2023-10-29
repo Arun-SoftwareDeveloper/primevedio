@@ -1,0 +1,27 @@
+/* Carousel container */
+.carousel-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Carousel image dimensions */
+.carousel-inner img {
+  width: 100%;
+  height: 450px;
+}
+
+/* Carousel controls position and styling */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+}
+
+/* Carousel control icon color */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #fff;
+}

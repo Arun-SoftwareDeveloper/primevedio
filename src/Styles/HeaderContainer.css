@@ -1,0 +1,27 @@
+/* HeaderContainer.css */
+.header-container {
+  background-color: #000; /* Set the background color to black */
+  color: #fff; /* Set text color to white */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.title {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 18px;
+}
+
+.search-bar {
+  margin-top: 10px;
+}
+
+.form-control {
+  border: none; /* Remove input border */
+  border-radius: 0; /* Remove input border radius */
+}
+
+.btn {
+  border-radius: 0; /* Remove button border radius */
+}
