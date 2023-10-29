@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Directory from "./Directory";
+import RegisterForm from "./Components/RegisterForm";
 
 function App() {
   return (
@@ -8,7 +9,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Directory />} />
-
           <Route path="/register" element={<RegisterForm />} />
         </Routes>
       </Router>
