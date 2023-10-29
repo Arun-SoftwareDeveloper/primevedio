@@ -1,4 +1,3 @@
-// HeaderContainer.js
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/HeaderContainer.css";
@@ -12,27 +11,25 @@ function HeaderContainer() {
             <div className="container">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <a className="nav-link" href="#Home">
+                  <Link to="/" className="nav-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/movies" className="nav-link">
                     Movies
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <Link to="/webseries" className="nav-link">
                     WebSeries
-                  </a>
+                  </Link>
                 </li>
-                <Link to="/register">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">
-                      Login/Signup
-                    </a>
-                  </li>
-                </Link>
+                <li className="nav-item">
+                  <Link to="/register" className="nav-link">
+                    Login/Signup
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>

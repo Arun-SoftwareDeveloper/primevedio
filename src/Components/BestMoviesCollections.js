@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import moodarkoodam from "../Images/BestMoviesCollections/moodarkoodam.jpg";
 import subramaniyapuram from "../Images/BestMoviesCollections/subramaniyapuram.jpg";
 import onnaiyumattukuttiyum from "../Images/BestMoviesCollections/onnaiyumattukuttiyum.webp";
