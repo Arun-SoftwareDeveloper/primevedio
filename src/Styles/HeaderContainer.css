@@ -25,3 +25,18 @@
 .btn {
   border-radius: 0; /* Remove button border radius */
 }
+/* NavigationBar.css */
+
+/* Custom CSS styles */
+.custom-nav {
+  background-color: #333; /* Change this to your desired background color */
+  color: #fff; /* Change this to your desired text color */
+}
+
+.custom-nav li {
+  padding: 10px 15px;
+}
+
+.custom-nav li:hover {
+  background-color: #555; /* Change this to your desired hover background color */
+}

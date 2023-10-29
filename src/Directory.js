@@ -6,21 +6,24 @@ import ThalaivarMovies from "./Components/ThalaivarMovies";
 import KamalMovies from "./Components/KamalMovies";
 import BestMoviesCollections from "./Components/BestMoviesCollections";
 import Footer from "./Components/Footer";
-import RegisterForm from "./Components/RegisterForm";
-import Directory from "./Directory";
 
-function App() {
+function Directory() {
   return (
     <div className="container app-container mt-4">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Directory />} />
-
-          <Route path="/register" element={<RegisterForm />} />
-        </Routes>
-      </Router>
+      <div className="contianer mt-4">
+        <div className="row">
+          <div className="col-md-12">
+            <HeaderContainer />
+            <CouroselImages />
+            <BestMoviesCollections />
+            <ThalaivarMovies />
+            <KamalMovies />
+            <Footer />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Directory;

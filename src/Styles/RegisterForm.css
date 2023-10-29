@@ -1,0 +1,19 @@
+/* RegisterForm.css */
+
+.registerForm-container {
+  padding: 20px;
+}
+
+.form-group {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
