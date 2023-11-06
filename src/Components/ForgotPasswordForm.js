@@ -11,7 +11,7 @@ function ForgotPasswordForm() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://primevedio-backend.onrender.com/forgotpassword",
+        "http://localhost:4000/forgotPassword",
         {
           email: email, // Send the email as part of the request
         }
@@ -35,6 +35,7 @@ function ForgotPasswordForm() {
       <div className="container mt-4">
         <div className="row">
           <div className="col-md-12">
+            <h1 className="title text-center">primevedio</h1>
             <Link to="/">
               <span className="back-btn">
                 {" "}

@@ -42,7 +42,7 @@ function RegisterForm() {
       <div className="container mt-4">
         <div className="row">
           <div className="col-md-12">
-            <HeaderContainer />
+            <h1 className="title text-center">primevedio</h1>
             <form
               className="form-group text-center"
               onSubmit={handleRegisterForm}

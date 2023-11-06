@@ -33,7 +33,7 @@ function LoginForm() {
       <div className="container mt-4">
         <div className="row">
           <div className="col-md-12">
-            <HeaderContainer />
+            <h1 className="title text-center">primevedio</h1>
             <form className="form-group" onSubmit={handleLoginForm}>
               <input
                 type="email"
@@ -54,13 +54,17 @@ function LoginForm() {
                   Login
                 </button>
               </span>
+              <p>________New to primevedio?________</p>
+              <Link to="/register">
+                <p>Create new account</p>
+              </Link>
               <Link to="/forgotPassword">
                 <p
                   className="text-center dodgerblue"
                   style={{ color: "dodgerblue", cursor: "pointer" }}
                 >
                   {" "}
-                  Forgot Password
+                  Forgot Password?
                 </p>
               </Link>
             </form>

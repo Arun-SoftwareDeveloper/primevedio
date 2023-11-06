@@ -1,4 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import "../Styles/BestMoviesCollections.css";
+
+// Import your image files
 import moodarkoodam from "../Images/BestMoviesCollections/moodarkoodam.jpg";
 import subramaniyapuram from "../Images/BestMoviesCollections/subramaniyapuram.jpg";
 import onnaiyumattukuttiyum from "../Images/BestMoviesCollections/onnaiyumattukuttiyum.webp";
@@ -6,9 +12,7 @@ import uriyadi from "../Images/BestMoviesCollections/uriyadi.jpg";
 import gangsofwasheepur from "../Images/BestMoviesCollections/gangsofwasheepur.jpg";
 import kattrathutamil from "../Images/BestMoviesCollections/kattrathutamil.jpg";
 import naankadavul from "../Images/BestMoviesCollections/naankadavul.jpg";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css"; // Import the carousel styles
-import "../Styles/BestMoviesCollections.css";
+
 function BestMoviesCollections(props) {
   const responsive = {
     desktop: {
@@ -38,6 +42,8 @@ function BestMoviesCollections(props) {
     naankadavul,
   ];
 
+  const gangsofwasheepurLink =
+    "https://www.netflix.com/in/title/80088678?source=35";
   return (
     <div className="container bestMoviesCollections-container mt-4">
       <div className="container mt-4">
@@ -64,16 +70,20 @@ function BestMoviesCollections(props) {
               itemClass="carousel-item-padding-40-px"
             >
               {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="bestMoviesCollections-image-container"
-                >
-                  <img
-                    src={image}
-                    alt={`BestMoviesCollections ${index + 1}`}
-                    className="bestMoviesCollections-image"
-                  />
-                </div>
+                <Link to={`/movie/${gangsofwasheepurLink}`} key={index}>
+                  {" "}
+                  {/* Provide the appropriate URL in to attribute */}
+                  <div
+                    key={index}
+                    className="bestMoviesCollections-image-container"
+                  >
+                    <img
+                      src={image}
+                      alt={`BestMoviesCollections ${index + 1}`}
+                      className="bestMoviesCollections-image"
+                    />
+                  </div>
+                </Link>
               ))}
             </Carousel>
           </div>
