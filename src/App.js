@@ -16,7 +16,7 @@ function App() {
           <Route path="/register" element={<RegisterForm />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/forgotPassword" element={<ForgotPasswordForm />} />
-          <Route path="/resetPassword/:token" element={<ResetPassword />} />
+          <Route path="/resetPassword" element={<ResetPassword />} />
           <Route path="/webseries" element={<WebSeries />} />
         </Routes>
       </Router>
