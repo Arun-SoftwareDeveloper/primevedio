@@ -1,4 +1,54 @@
 /* ThalaivarMovies.css */
+/* Add these styles to your ThalaivarMovies.css file */
+
+.thalaivarMovies-container {
+  text-align: center;
+}
+
+h1 span {
+  color: dodgerblue;
+}
+
+/* Style for the carousel */
+.carousel-container {
+  margin-top: 20px;
+}
+
+.thalaivar-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.thalaivar-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+/* Text overlay styles */
+.thalaivar-image-container:hover .thalaivar-overlay {
+  opacity: 1;
+}
+
+.thalaivar-overlay {
+  position: absolute;
+  bottom: 0; /* Show the overlay at the bottom */
+  left: 0;
+  width: 100%;
+  padding: 10px; /* Add padding for better readability */
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.thalaivar-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0; /* Remove margin to keep text close to the bottom */
+}
+
 .thalaivarMovies-container {
   text-align: center;
   padding: 20px;

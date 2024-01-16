@@ -13,7 +13,7 @@ import HeaderContainer from "./HeaderContainer";
 import CouroselImages from "./CouroselImages";
 import WebSeriesCaurosel from "./WebSeriesCaurosel";
 
-function WebSeries() {
+function TamilWebSeries() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -48,7 +48,8 @@ function WebSeries() {
         <div className="row">
           <div className="col-md-12">
             <h1>
-              <span style={{ color: "dodgerblue" }}>Prime-</span>WebSeries
+              <span style={{ color: "dodgerblue" }}>Prime-</span> Tamil
+              WebSeries
             </h1>
             <Carousel
               swipeable={true}
@@ -84,4 +85,4 @@ function WebSeries() {
   );
 }
 
-export default WebSeries;
+export default TamilWebSeries;

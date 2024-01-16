@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheckCircle, faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import nayakan from "../Images/Kamal/nayakan.jpg";
 import indian2 from "../Images/Kamal/indian-2.jpg";
 import heyram from "../Images/Kamal/hey-ram.jpg";
@@ -7,10 +9,45 @@ import virumandi from "../Images/Kamal/virumandi.webp";
 import vishwaroopam from "../Images/Kamal/vishwaroopam.jpg";
 import dasavadharam from "../Images/Kamal/dasavadharam.jpg";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css"; // Import the carousel styles
+import "react-multi-carousel/lib/styles.css";
 import "../Styles/KamalMovies.css";
 
-function KamalMovies() {
+function KamalMovies({ getStatusIcon }) {
+  const images = [
+    { title: "Nayakan", image: nayakan, text: "Nayakan", status: "Free" },
+    {
+      title: "Indian 2",
+      image: indian2,
+      text: "Indian 2",
+      status: "Subscription",
+    },
+    { title: "Hey Ram", image: heyram, text: "Hey Ram", status: "Free" },
+    {
+      title: "Uthamavillan",
+      image: uthamavillan,
+      text: "Uthamavillan",
+      status: "Subscription",
+    },
+    {
+      title: "Virumandi",
+      image: virumandi,
+      text: "Virumandi",
+      status: "Subscription",
+    },
+    {
+      title: "Vishwaroopam",
+      image: vishwaroopam,
+      text: "Vishwaroopam",
+      status: "Free",
+    },
+    {
+      title: "Dasavadharam",
+      image: dasavadharam,
+      text: "Nayakan",
+      status: "Free",
+    },
+  ];
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -29,15 +66,6 @@ function KamalMovies() {
     },
   };
 
-  const images = [
-    nayakan,
-    indian2,
-    heyram,
-    uthamavillan,
-    virumandi,
-    vishwaroopam,
-    dasavadharam,
-  ];
   return (
     <div className="container kamalMovies-container mt-4">
       <div className="container mt-4">
@@ -66,10 +94,14 @@ function KamalMovies() {
               {images.map((image, index) => (
                 <div key={index} className="kamal-image-container">
                   <img
-                    src={image}
-                    alt={`Kamal ${index + 1}`}
+                    src={image.image}
+                    alt={image.title}
                     className="kamal-image"
                   />
+                  <div className="kamal-overlay">
+                    <p className="kamal-text">{getStatusIcon(image.status)}</p>
+                    <p className="kamal-text">{image.text}</p>
+                  </div>
                 </div>
               ))}
             </Carousel>
